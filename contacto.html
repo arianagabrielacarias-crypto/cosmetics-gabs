@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head> 
+<body>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #f5f5dc;
+        color: #000;
+        padding: 20px;
+    }
+
+    nav {
+        background-color: #cc3a77;
+        padding: 10px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        margin: 15px;
+        font-weight: bold;
+        }
+
+    section {
+        padding: 20px;
+    }
+
+    img {
+        width: 250px;
+        border-radius: 10px;
+    }
+
+    .btn {
+        background-color: #25D366;
+        color: white;
+        padding: 12px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+    }
+    footer {
+        background-color: #ff69b4;
+        color: white;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    </style>
+
+    <header>
+    <img src="c:\Users\estra\Downloads\david\logo.PNG.png" alt="Cosmetics Gabs Logo" class="logo">
+</header>
+
+<nav>
+    <a href="#datos personales">Datos Personales</a>
+    <a href="#bienvenidos">Bienvenidos</a>
+    <a href="#quienes-somos">Quiénes Somos</a>
+    <a href="#nuestros-productos">Nuestros Productos</a>
+    <a href="#porque-nosotros">¿Por qué Nosotros?</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<h1>Contacto</h1>
+<p>whatsApp: +502 31478920</p>  
+<p>facebook: Cosmetics Gabs</p>
+<p>Instagram: @cosmeticsgabs</p>
+
+<h2>Envíanos un mensaje</h2>
+
+<form action="enviar_mensaje.php" method="post">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="email">Correo Electrónico:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+    <input type="submit" value="Enviar">
+
+    <footer>
+    <p>© 2026 Cosmetics Gabs - Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
