@@ -1,71 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="styles.css">
-</head> 
-<body>
-    <!DOCTYPE html>
-
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cosmetics Gabs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetics Gabs - Contacto</title>
+    <link rel="stylesheet" href="styles.css">
     
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-
-    header {
-        background-color: #f5f5dc;
-        color: #000;
-        padding: 20px;
-    }
-
-    nav {
-        background-color: #cc3a77;
-        padding: 10px;
-    }
-
-    nav a {
-        text-decoration: none;
-        color: black;
-        margin: 15px;
-        font-weight: bold;
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
-    section {
-        padding: 20px;
-    }
+        header {
+            background-color: #f5f5dc;
+            color: #000;
+            padding: 20px;
+        }
 
-    img {
-        width: 250px;
-        border-radius: 10px;
-    }
+        nav {
+            background-color: #cc3a77;
+            padding: 10px;
+        }
 
-    .btn {
-        background-color: #25D366;
-        color: white;
-        padding: 12px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-        display: inline-block;
-    }
-    footer {
-        background-color: #ff69b4;
-        color: white;
-        padding: 10px;
-        margin-top: 20px;
-    }
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin: 15px;
+            font-weight: bold;
+        }
 
+        section {
+            padding: 20px;
+        }
+
+        img {
+            width: 250px;
+            border-radius: 10px;
+        }
+
+        .btn {
+            background-color: #25D366;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        /* Añadido un pequeño estilo para el formulario */
+        form {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
     </style>
+</head> 
+<body>
 
-    <header>
+<header>
     <img src="c:\Users\estra\Downloads\david\logo.PNG.png" alt="Cosmetics Gabs Logo" class="logo">
 </header>
 
@@ -78,26 +77,28 @@
     <a href="#contacto">Contacto</a>
 </nav>
 
-<h1>Contacto</h1>
-<p>whatsApp: +502 31478920</p>  
-<p>facebook: Cosmetics Gabs</p>
-<p>Instagram: @cosmeticsgabs</p>
+<section>
+    <h1>Contacto</h1>
+    <p>WhatsApp: +502 31478920</p>  
+    <p>Facebook: Cosmetics Gabs</p>
+    <p>Instagram: @cosmeticsgabs</p>
 
-<h2>Envíanos un mensaje</h2>
+    <h2>Envíanos un mensaje</h2>
 
-<form action="enviar_mensaje.php" method="post">
-    <label for="nombre">Nombre:</label><br>
-    <input type="text" id="nombre" name="nombre" required><br><br>
+    <form action="enviar_mensaje.php" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
 
-    <label for="email">Correo Electrónico:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-    <label for="mensaje">Mensaje:</label><br>
-    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
 
-    <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar">
+    </form> </section>
 
-    <footer>
+<footer>
     <p>© 2026 Cosmetics Gabs - Todos los derechos reservados.</p>
 </footer>
 
