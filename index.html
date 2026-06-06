@@ -1,60 +1,281 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Sitio Web - Plantilla</title>
-    <link rel="stylesheet" href="src/styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container">
-        <h1 class="logo">Mi Sitio</h1>
-        <nav class="nav" id="main-nav">
-          <button class="nav-toggle" id="navToggle">☰</button>
-          <ul class="nav-list">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#services">Servicios</a></li>
-            <li><a href="#contact">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cosmetics Gabs</title>
 
-    <main>
-      <section class="hero">
-        <div class="container">
-          <h2>Bienvenido a tu plantilla básica</h2>
-          <p>Inicio rápido para construir un sitio web estático moderno.</p>
-          <a class="btn" href="#about">Saber más</a>
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color:#fff5f8;
+}
+
+/* Encabezado */
+
+header{
+    background-color:#cc3a77;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+/* Menú */
+
+nav{
+    background-color:#f8c8dc;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#cc3a77;
+}
+
+/* Secciones */
+
+section{
+    padding:50px 20px;
+}
+
+.contenedor{
+    max-width:1000px;
+    margin:auto;
+}
+
+h2{
+    color:#cc3a77;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* Bienvenida */
+
+.bienvenida{
+    text-align:center;
+}
+
+.bienvenida img{
+    width:300px;
+    max-width:90%;
+    border-radius:15px;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+    margin-bottom:20px;
+}
+
+.boton{
+    display:inline-block;
+    background-color:#cc3a77;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:8px;
+    margin-top:20px;
+}
+
+/* Tarjetas */
+
+.tarjetas{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.tarjeta{
+    background:white;
+    width:250px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0px 2px 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+/* Contacto */
+
+.contacto{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0px 2px 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+/* Pie */
+
+footer{
+    background-color:#cc3a77;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Cosmetics Gabs</h1>
+    <p>Tu belleza es nuestra inspiración</p>
+</header>
+
+<nav>
+    <a href="#bienvenidos">Bienvenidos</a>
+    <a href="#datos">Datos Personales</a>
+    <a href="#quienes">Quiénes Somos</a>
+    <a href="#productos">Productos</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="bienvenidos">
+    <div class="contenedor bienvenida">
+
+```
+    <img src="imagenes/cosmetics-gabs.jpg" alt="Cosmetics Gabs">
+
+    <h2>¡Bienvenidos a Cosmetics Gabs!</h2>
+
+    <p>
+        Nos alegra tenerte aquí. Somos una tienda dedicada a ofrecer
+        productos de belleza de excelente calidad para realzar tu
+        belleza natural y ayudarte a sentirte segura y hermosa cada día.
+    </p>
+
+    <a href="#productos" class="boton">Ver Productos</a>
+
+</div>
+```
+
+</section>
+
+<section id="datos">
+    <div class="contenedor">
+
+```
+    <h2>Datos Personales</h2>
+
+    <div class="contacto">
+        <p><strong>Nombre:</strong> Ariana Gabriela</p>
+        <p><strong>Apellido:</strong> Carías Aguilar</p>
+        <p><strong>Correo:</strong> acariasa1@miumg.edu.gt</p>
+        <p><strong>Carnet:</strong> 2990-26-5159</p>
+        <p><strong>Carrera:</strong> Ingeniería en Sistemas</p>
+        <p><strong>Universidad:</strong> Universidad Mariano Gálvez de Guatemala</p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<section id="quienes">
+    <div class="contenedor">
+
+```
+    <h2>Quiénes Somos</h2>
+
+    <div class="contacto">
+        <p>
+            Cosmetics Gabs es un emprendimiento dedicado a la venta de
+            cosméticos y productos de belleza. Nuestro objetivo es ofrecer
+            productos originales, de calidad y al mejor precio para que
+            cada cliente encuentre lo que necesita para cuidar su imagen.
+        </p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<section id="productos">
+    <div class="contenedor">
+
+```
+    <h2>Nuestros Productos</h2>
+
+    <div class="tarjetas">
+
+        <div class="tarjeta">
+            <h3>Labiales</h3>
+            <p>Variedad de colores y acabados.</p>
         </div>
-      </section>
 
-      <section id="about" class="container section">
-        <h3>Sobre</h3>
-        <p>Esta plantilla incluye HTML, CSS y JavaScript ligeros para comenzar.</p>
-      </section>
-
-      <section id="services" class="container section">
-        <h3>Servicios</h3>
-        <div class="grid">
-          <div class="card">Diseño</div>
-          <div class="card">Desarrollo</div>
-          <div class="card">Soporte</div>
+        <div class="tarjeta">
+            <h3>Bases</h3>
+            <p>Cobertura perfecta para tu piel.</p>
         </div>
-      </section>
 
-      <section id="contact" class="container section">
-        <h3>Contacto</h3>
-        <p>Correo: contacto@ejemplo.com</p>
-      </section>
-    </main>
+        <div class="tarjeta">
+            <h3>Sombras</h3>
+            <p>Paletas para cualquier ocasión.</p>
+        </div>
 
-    <footer class="site-footer">
-      <div class="container">© 2026 Mi Sitio</div>
-    </footer>
+        <div class="tarjeta">
+            <h3>Perfumes</h3>
+            <p>Fragancias para damas y caballeros.</p>
+        </div>
 
-    <script src="src/main.js"></script>
-  </body>
+    </div>
+
+</div>
+```
+
+</section>
+
+<section id="contacto">
+    <div class="contenedor">
+
+```
+    <h2>Contacto</h2>
+
+    <div class="contacto">
+
+        <p><strong>Correo:</strong> acariasa1@miumg.edu.gt</p>
+
+        <p><strong>WhatsApp:</strong> +502 XXXXXXXX</p>
+
+        <br>
+
+        <a href="https://wa.me/502XXXXXXXX" class="boton">
+            Pedir por WhatsApp
+        </a>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<footer>
+    <p>© 2026 Cosmetics Gabs - Todos los derechos reservados.</p>
+</footer>
+
+</body>
 </html>
